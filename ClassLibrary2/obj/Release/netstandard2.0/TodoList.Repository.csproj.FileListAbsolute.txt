@@ -1,0 +1,9 @@
+C:\Users\ThinkPad\Desktop\TodoList8-3\ClassLibrary2\bin\Release\netstandard2.0\TodoList.Repository.deps.json
+C:\Users\ThinkPad\Desktop\TodoList8-3\ClassLibrary2\bin\Release\netstandard2.0\TodoList.Repository.dll
+C:\Users\ThinkPad\Desktop\TodoList8-3\ClassLibrary2\bin\Release\netstandard2.0\TodoList.Repository.pdb
+C:\Users\ThinkPad\Desktop\TodoList8-3\ClassLibrary2\obj\Release\netstandard2.0\TodoList.Repository.csprojAssemblyReference.cache
+C:\Users\ThinkPad\Desktop\TodoList8-3\ClassLibrary2\obj\Release\netstandard2.0\TodoList.Repository.csproj.CoreCompileInputs.cache
+C:\Users\ThinkPad\Desktop\TodoList8-3\ClassLibrary2\obj\Release\netstandard2.0\TodoList.Repository.AssemblyInfoInputs.cache
+C:\Users\ThinkPad\Desktop\TodoList8-3\ClassLibrary2\obj\Release\netstandard2.0\TodoList.Repository.AssemblyInfo.cs
+C:\Users\ThinkPad\Desktop\TodoList8-3\ClassLibrary2\obj\Release\netstandard2.0\TodoList.Repository.dll
+C:\Users\ThinkPad\Desktop\TodoList8-3\ClassLibrary2\obj\Release\netstandard2.0\TodoList.Repository.pdb

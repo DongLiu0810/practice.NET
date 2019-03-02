@@ -1,0 +1,76 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+    <style type="text/css">
+        [v-cloak] {
+            display: none;
+        }
+    </style>
+    <script src="/js/vue.js" language="javascript"></script>
+    <script src="/js/vue-resource.js" language="javascript"></script>
+    <script>
+        window.onload = function () {
+            var app = new Vue({
+                el: '#app',
+                data: {
+                    name: "",
+                    password:""
+                },
+                methods: {
+                    get: function () {
+                        //发送get请求
+                        this.$http.get('/api/user?name='+this.$data.name+ '&password='+this.$data.password )
+                            .then(
+                            function (res) {
+                                if (res.body) {
+                                    window.location.href = "/todo/list.html#" + res.body;
+                                }
+                                else {
+                                    alert('登录失败处理');   //失败处理
+                                }
+                            },
+                            function () {
+                                alert('请求失败处理');   //失败处理
+                            });
+                    },
+                    post: function () {
+                        this.$http.post('/api/user', { "name": this.$data.name, "password": this.$data.password })
+                            .then(
+                            function (res) {
+                                
+                                    if (res.body == 0) {
+                                        alert('用户名重复');
+                                    } else if (res.body == 1) {
+                                        alert('注册成功处理');
+                                    }                                   
+                                
+                                else {
+                                    alert('注册失败处理1');   //失败处理
+                                }
+                            },
+                            function () {
+                                alert('注册失败处理');   //失败处理
+                            });
+                    }
+                }
+            });
+        }
+    </script>
+</head>
+<body>
+    <div id="app" v-cloak>
+        <ul>
+            <li>
+                用户名：<input v-model="name" />
+            </li>
+            <li>
+                密码：<input v-model="password" />
+            </li>
+        </ul>
+        <div><button v-on:click="post">注册</button></div>
+        <div><button v-on:click="get">登录</button></div>
+    </div>
+</body>
+</html>

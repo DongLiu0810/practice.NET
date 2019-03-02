@@ -1,0 +1,44 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>TodoList.Web</name>
+    </assembly>
+    <members>
+        <member name="T:Myth.SIS.BurialPoint.Api.Controllers.BookController">
+            <summary>
+            书籍的webapi
+            </summary>
+        </member>
+        <member name="M:Myth.SIS.BurialPoint.Api.Controllers.BookController.#ctor(TodoList.Repository.TodoListDbContext)">
+            <summary>
+            构造函数
+            </summary>
+            <param name="_context"></param>
+        </member>
+        <member name="M:Myth.SIS.BurialPoint.Api.Controllers.BookController.Delete(System.Int32)">
+            <summary>
+            删除书籍
+            </summary>
+            <param name="id"></param>
+            <returns></returns>
+        </member>
+        <member name="T:NetCoreMiddleware.Middlewares.RequestIPExtensions">
+            <summary>
+            请求IP扩展类
+            </summary>
+        </member>
+        <member name="M:NetCoreMiddleware.Middlewares.RequestIPExtensions.UseRequestIP(Microsoft.AspNetCore.Builder.IApplicationBuilder)">
+            <summary>
+            引入请求IP中间件
+            </summary>
+            <param name="builder">扩展类型</param>
+            <returns>IApplicationBuilder</returns>
+        </member>
+        <member name="M:NetCoreMiddleware.Middlewares.RequestIPMiddleware.Invoke(Microsoft.AspNetCore.Http.HttpContext)">
+            <summary>
+            </summary>
+            <param name="context"></param>
+            <returns>Task(void)</returns>
+        </member>
+    </members>
+</doc>

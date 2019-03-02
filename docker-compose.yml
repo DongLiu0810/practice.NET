@@ -1,0 +1,8 @@
+version: '3.4'
+
+services:
+  todolist.web:
+    image: ${DOCKER_REGISTRY}todolistweb
+    build:
+      context: .
+      dockerfile: TodoList.Web/Dockerfile
